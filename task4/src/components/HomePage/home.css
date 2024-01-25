@@ -1,0 +1,91 @@
+
+
+.horiline{
+    width: 250px;
+    background-color: white;
+    border: none;
+    height: 2px;
+}
+.middlediv{
+    padding-top: 15%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.middlediv .heading{
+    font-size: 70px;
+    text-shadow: 2px 2px black;
+}
+.middlediv .small-heading{
+    font-size: 20px;
+    text-shadow: 2px 2px black;
+
+}
+
+.upper-div{
+    height: 100vh;
+    background: url("./bgimg.avif") no-repeat ;
+    background-size: cover;
+}
+.buttonsdiv{
+    display: flex;
+    column-gap: 15px;
+}
+
+.thirdpart{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.middleHoriline{
+    background-color: gray;
+    height: 3px;
+    border: none;
+    width: 200px ;
+}
+.datadiv{
+    padding : 7%;
+}
+.datadiv p{
+    font-size: 18px;
+}
+
+.middleimg{
+    width: 350px;
+    height: max-content;
+    margin-top: 10%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.footercontainer{
+    background: url("./bgimg.avif") no-repeat;
+    background-size: cover;
+
+    padding: 5%;
+}
+.footerbtns{
+    padding-inline: 18px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+}
+
+.footerlinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.footerspan{
+    display: flex;
+    justify-content: center;
+}
+
+.counterbtns{
+ column-gap: 20px;
+}
