@@ -1,0 +1,25 @@
+body{
+    background-color: aqua;
+    height: 100vh;
+    color: black;
+}
+.cartDiv{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    padding: 20%;
+}
+.btndiv{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 20px;
+    align-items: center;
+}
+.btndiv button{
+    padding: 3px;
+    padding-inline: 10px;
+    background-color: rgb(43, 147, 198);
+    border: 1px solid black;
+    color: black;
+}

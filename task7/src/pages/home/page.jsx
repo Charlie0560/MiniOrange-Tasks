@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 // _app.js
 import React, { useEffect, useState } from 'react'
 const axios = require('axios');
@@ -20,7 +20,7 @@ function home({ stockData }) {
     <h1>Stock Details</h1>
     <div className='cards '>
         {stockData &&  stockData.length > 0 &&
-          stockData.map((d, index) => <Cards data={d} />)}
+          stockData.map((d) => <Cards data={d} />)}
       </div>
       {/* <Component {...pageProps} /> */}
   </>
