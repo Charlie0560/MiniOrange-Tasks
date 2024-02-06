@@ -1,0 +1,855 @@
+<!-- header-->
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Thinkific SSO & MFA solution using JWT - Thinkific SSO | miniOrange</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		content="Thinkific SSO (Single Sign-On) enables you to connect your IDP with Thinkific to provide a seamless Thinkific login experience for users when navigating from your main site & Thinkific Application" />
+	<link rel="canonical" href="https://www.miniorange.com/iam/integrations/thinkific-sso-mfa" />
+	<meta property="og:title" content="Thinkific SSO & MFA solution using JWT - Thinkific SSO | miniOrange" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="https://www.miniorange.com/iam/integrations/thinkific-sso-mfa" />
+	<meta property="og:image" content="https://www.miniorange.com/" />
+	<meta property="og:description"
+		content="Thinkific SSO (Single Sign-On) enables you to connect your IDP with Thinkific to provide a seamless Thinkific login experience for users when navigating from your main site & Thinkific Application" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Thinkific SSO & MFA solution using JWT - Thinkific SSO | miniOrange" />
+	<meta name="twitter:description"
+		content="Thinkific SSO (Single Sign-On) enables you to connect your IDP with Thinkific to provide a seamless Thinkific login experience for users when navigating from your main site & Thinkific Application" />
+	<meta name="twitter:image" content="https://www.miniorange.com/" />
+	<meta name="twitter:url" content="https://www.miniorange.com/iam/integrations/thinkific-sso-mfa">
+	<?php include("../iam-header.php"); ?>
+
+	<!-- Banner -->
+	<div class="row">
+		<div class="prod-banner">
+			<div class="col-md-6">
+				<div class="product-banner-heading">
+					<h1 class="h2"><span class="prod-banner-h-t1">miniOrange +&nbsp;</span><br><span
+							class="prod-banner-h-t2">Thinkific SSO & MFA</span></h1>
+					<h3 class="prod-banner-cont">Thinkific Single Sign-On (SSO) using the miniOrange JWT solution
+						enables seamless and secure access to your Thinkific site using a single set of login
+						credentials along with any of your existing Identity Providers/User Store (Azure Active
+						Directory, Okta, Ping, etc.) credentials. Additionally, for advanced security Multi-Factor
+						Authentication (MFA) for Thinkific can also be enabled.</h3>
+					<p class="product-banner-text pd-tp-tw"><i
+							class="fas fa-check-circle orange-text"></i><span>&nbsp;&nbsp;<b>SSO + MFA Support for any
+								Thinkific Plan (Free, Basic, Plus, etc)</b></span></p>
+					<p class="product-banner-text"><i
+							class="fas fa-check-circle orange-text"></i><span>&nbsp;&nbsp;<b>miniOrange SSO solution
+								Recommended by Thinkific</b></span></p>
+					<a href="#request-demo-section" target="_blank" class="btn primary-btn"><b>Request a Demo</b></a>
+					<a class="btn secondary-btn" href="/iam/pricing" target="_blank">Pricing</a><br>
+				</div>
+			</div>
+			<div class="col-md-6 text-center">
+				<img class="product-banner-image image-responsive" width="500px"
+					src="/images/landing-page/thinkific-integration.webp" alt="BigCommerce SSO Integration with IDP">
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Sub Navigation -->
+	<div class="container-fluid mob-hide-navbars nav-submenu">
+		<div class="mob-hide-navbar dflex">
+			<div class="submenu-text goto-opt goto-opt-sec active">
+				<a href="#feat"> Features </a>
+			</div>
+
+			<div class="submenu-text goto-opt goto-opt-sec">
+				<a href="#integ"> Integrations </a>
+			</div>
+
+			<div class="submenu-text goto-opt goto-opt-sec">
+				<a href="#ben"> Benefits </a>
+			</div>
+
+			<div class="submenu-text goto-opt goto-opt-sec">
+				<a href="#cust"> Customers </a>
+			</div>
+
+			<div class="submenu-text goto-opt goto-opt-sec">
+				<a href="#price"> Pricing </a>
+			</div>
+		</div>
+	</div>
+	</div>
+	<br><br>
+	<!-- Sub Nav End -->
+
+	<section id="feat">
+		<div class="container text-center">
+			<h2 class="text-center h2 product-page-heading">Seamless Identity Management with Thinkific SSO Solution
+			</h2><br><br>
+			<p class="textsec">
+				<strong>Thinkific Single Sign-On (SSO)</strong> solution by miniOrange helps you simplify everyday
+				teaching and learning experience for students, teachers, and staff by providing you a seamless Thinkific
+				login experience. Users of Thinkific will no longer need to maintain separate credentials for their
+				students or invest in any custom development to integrate with Thinkific. You can log into the Thinkific
+				platform using your <b>existing credentials</b>. <a class="cust-link"
+					href="/thinkific-jwt-single-signon(sso)-solution" target="_blank">Thinkific Single Sign On (SSO)
+					solution</a> also makes life easy for both Administrators and end-users, as it provides the ability
+				to securely exchange user identity data between Thinkific & end-user directories.
+				<br><br>
+				On top of this, the <a href="/two-factor-authentication-for-thinkific" target="_blank">Thinkific
+					Multi-Factor Authentication (MFA)</a> solution adds an extra layer of protection for Thinkific by
+				challenging users to a second factor. We provide <a class="cust-link"
+					href="/products/multi-factor-authentication-mfa-methods" target="_blank">15+ authentication
+					methods</a> such as OTP over SMS, TOTP tokens, OTP over Email, hardware tokens, etc. to choose from.
+			</p>
+			<br>
+			<br>
+		</div>
+	</section>
+	<br>
+
+	<!-- Features -->
+
+
+	<section id="feat">
+		<div class="container-fluid" id="benefits">
+			<h2 class="text-center h2 product-page-heading">Streamline Workforce and Customer security with designated
+				features</h2><br><br>
+
+			<div class="row" id="features">
+				<div class="col-md-4 col-xs-12">
+					<img class="product-banner-image image-responsive feature-image"
+						src="/images/product-page/features-section.svg" alt="Features Section">
+				</div>
+
+				<div class="col-md-8" id="benefits">
+					<div class="row">
+						<div class="col-md-6">
+							<span class="icon-small">
+								<i class="fas fa-plug prod-card-icon"></i>
+								<h4><b>Connect existing IdP's / User Stores</b></h4>
+							</span>
+							<p>Use your existing IDP credentials for <a href="/products/single-sign-on-sso"
+									target="_blank">SSO</a> Thinkific login. No need to onboard your users separately,
+								we use existing user stores like IDP, Azure Active Directory (AAD)/ LDAP, etc. </p>
+						</div>
+
+						<div class="col-md-6">
+							<span class="icon-small">
+								<i class="fas fa-users-cog prod-card-icon"></i>
+								<h4><b>Multiple IdP / User Store support</b></h4>
+							</span>
+							<p>You can configure multiple IDPs/ User stores for Thinkific and give users the option to
+								select the IDP of their choice to login. miniOrange provides a centralized way to
+								connect seamlessly with all IDPs and integrate SSO into Thinkific.</p>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-6">
+							<span class="icon-small">
+								<i class="fas fa-ban prod-card-icon"></i>
+								<h4><b>IP / Device Restriction</b></h4>
+							</span>
+							<p>Remember personal devices or restrict users to login from specific <a
+									href="/configure-thinkific-ip-restriction" target="_blank">IPs</a> providing
+								additional security to the accounts.</p>
+						</div>
+
+						<div class="col-md-6">
+							<span class="icon-small">
+								<i class="fas fa-shield-alt prod-card-icon"></i>
+								<h4><b>Multiple Factor Authentication</b></h4>
+							</span>
+							<p>Admin can enable or disable Thinkific as 2FA for a particular user and for any particular
+								application. We offer to log in using backup codes whenever the user is not having the
+								phone available.</p>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-6">
+							<span class="icon-small">
+								<i class="fas fa-sync prod-card-icon"></i>
+								<h4><b>User Sync</b></h4>
+							</span>
+							<p>User Sync syncs users from any third-party platform to Thinkific
+								and vice versa. It includes all features like update, delete, add, etc.</p>
+						</div>
+
+
+						<div class="col-md-6">
+							<span class="icon-small">
+								<i class="fas fa-solid fa-star prod-card-icon"></i>
+								<h4><b>Thinkific as an OAuth provider</b></h4>
+							</span>
+							<p>You can configure <a target="_blank"
+									href="/iam/login-with-external-idp/configure-thinkific-sso/">Thinkific as an Oauth
+									provider</a> to single sign-on into apps that support SAML or any other protocols
+								like OAuth, OpenID Connect, <a href="https://blog.miniorange.com/tag/what-is-jwt/"
+									target="_blank">JWT</a>, etc.</p>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<br>
+	<br>
+	<br><br>
+
+	<!-- Feature End -->
+
+	<!-- Integration -->
+	<section id="integ">
+		<div class="col-md-12 col-xs-12">
+			<br>
+			<h2 id="integration" class="product-page-heading text-center h2">Popular Integrations with IDPs and User
+				Directories</h3>
+				<br>
+				<p class="text-center"> You can enable <strong>Thinkific Single Sign-On (SSO)</strong> and connect it to
+					any Identity provider. See our integration guides with the most popular Identity Providers.</p>
+				<div class="video col-md-6 col-xs-12"><br><br><br><br>
+					<iframe width="600" height="348" src="https://www.youtube.com/embed/wUpEddmz_4Y" frameborder="0"
+						webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe>
+				</div>
+				<br>
+				<br>
+
+				<div class="col-md-6 col-xs-12">
+					<div class="row text-center">
+						<div class="col-md-4 col-xs-12">
+							<div class="th-idp-img-box">
+								<a href="/thinkific-sso-azure-ad-integration" target="_blank"><img
+										class="img-2fa-method" src="/images/logo/azure-ad.webp"
+										alt="Thinkific SSO with Azure AD "></a>
+							</div>
+						</div>
+						<div class="col-md-4 col-xs-12">
+							<div class="th-idp-img-box">
+								<a href="/thinkific-sso-okta-integration" target="_blank"><img class="img-2fa-method"
+										src="/images/idp/okta.webp" alt="Thinkific SSO with Okta"></a>
+							</div>
+						</div>
+						<div class="col-md-4 col-xs-12">
+							<div class="th-idp-img-box">
+								<a href="/thinkific-jwt-single-signon(sso)-solution" target="_blank"><img
+										class="img-2fa-method" src="/images/idp/miniorange.webp"
+										alt="Thinkific SSO with miniOrange"></a>
+							</div>
+						</div>
+					</div>
+					<br>
+
+					<div class="row text-center">
+						<div class="col-md-4 col-xs-12">
+							<div class="th-idp-img-box">
+								<a href="/iam/login-with-external-idp/configure-onelogin-sso" target="_blank"><img
+										class="img-2fa-method" src="/images/idp/onelogin-logo.webp"
+										alt="Thinkific SSO with onelogin"></a>
+							</div>
+						</div>
+						<div class="col-md-4 col-xs-12">
+							<div class="th-idp-img-box">
+								<a href="/iam/login-with-external-idp/configure-auth0-sso" target="_blank"><img
+										class="img-2fa-method" src="/images/logo/auth0.webp"
+										alt="Thinkific SSO with Auth0"></a>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-xs-12">
+							<div class="th-idp-img-box">
+								<a href="/iam/thinkific-wordpress-integration" target="_blank"><img
+										class="img-2fa-method" src="/images/logo/wordpress.webp"
+										alt="Thinkific SSO with WordPress"></a>
+							</div>
+						</div>
+
+					</div>
+
+					<br>
+					<div class="row text-center">
+						<div class="col-md-4 col-xs-12">
+							<div class="th-idp-img-box">
+								<a href="/iam/login-with-external-idp/configure-moodle-sso" target="_blank"><img
+										class="img-2fa-method" src="/images/idp/moodle.webp"
+										alt="Thinkific SSO with Moodle"></a>
+							</div>
+						</div>
+						<div class="col-md-4 col-xs-12">
+							<div class="th-idp-img-box">
+								<img class="img-2fa-method" src="/images/idp/shopify.webp"
+									alt="Thinkific SSO with Shopify">
+							</div>
+						</div>
+
+						<div class="col-md-4 col-xs-12">
+							<div class="th-idp-img-box">
+								<a href="/iam/login-with-external-idp/configure-salesforce-sso" target="_blank"><img
+										src="/images/idp/salesforce.webp" id="salesforce"
+										alt="Thinkific SSO with Salesforce" width="120" height="60"></a>
+							</div>
+						</div>
+					</div>
+					<br>
+				</div>
+				<br>
+		</div>
+		</div>
+		</div>
+		</div>
+		<p class="mt-5 text-center">Can't find your IDP ? Contact us on <a
+				href="mailto:idpsupport@xecurify.com">idpsupport@xecurify.com</a>. We'll help you set up Thinkific SSO
+			login in no time.</p>
+		<br>
+		<p class="text-center mt-5"><a class="prod-banner-btn" href="/iam/login-with-external-idp/">See More</a></p>
+		</div>
+	</section>
+	<br><br>
+
+	<!-- Benefits -->
+	<section id="ben">
+		<div class="row benefits-section" id="benefit">
+			<div class="container-fluid">
+				<h2 class="product-page-heading h2 text-center">Benefits</h2>
+				<div class="row">
+					<div class="col-md-4 col-xs-12">
+						<div class="benefits-card-content">
+							<i class="fas fa-thumbs-up prod-card-icon"></i>
+							<h3><b>Seamless User Experience</b></h3>
+							<p>Give students, teachers, alumni, and employees a simplified online teaching/learning
+								experience while minimizing authentication burden.</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-xs-12">
+						<div class="benefits-card-content">
+							<i class="fas fa-users prod-card-icon"></i>
+							<h3><b>Manage users with ease</b></h3>
+							<p>Add or remove users with just a few clicks, As you have to make changes in only one user
+								directory rather than multiple sources.</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-xs-12">
+						<div class="benefits-card-content">
+							<i class="fas fa-arrow-down prod-card-icon"></i>
+							<h3><b>Reduced support cost</b></h3>
+							<p>Remembering fewer passwords means reducing support dependency and thus reducing the cost
+								of support.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 col-xs-12">
+						<div class="benefits-card-content">
+							<i class="fas fa-exchange-alt prod-card-icon"></i>
+							<h3><b>Extensible</b></h3>
+							<p>With support to <a href="/iam/integrations/" target="_blank">5000+ applications</a>
+								(Zoom, LMS apps, etc) already and growing, Scale-Up or Scale-Down adaption of
+								applications without any hassle.</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-xs-12">
+						<div class="benefits-card-content">
+							<i class="fas fa-tv prod-card-icon"></i>
+							<h3><b>Platform Independent</b></h3>
+							<p>Seamless access over all devices supporting a web browser which gives students, teachers,
+								alumni, and employees hassle free experience on any platform.</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-xs-12">
+						<div class="benefits-card-content">
+							<i class="fas fa-users-cog prod-card-icon"></i>
+							<h3><b>User Life-cycle Management</b></h3>
+							<p>Easily manage user life-cycle with the transition of a user from one group to another.
+								e.g. Student to Alumni, Undergraduate to Postgraduate.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<br><br>
+
+	<!-- Customers -->
+	<section id="cust">
+		<div class="row" id="customers">
+			<h3 class="product-page-heading text-center h1">Customers</h3>
+			<br><br>
+
+			<div class="marquee-wrapper">
+				<div class="container-fluid">
+					<div class="marquee-block">
+						<div class="marquee-inner to-left">
+							<span>
+								<div class="marquee-item">
+									<img class="img-2fa-method logo2" href="#cust2"
+										src="/images/customer-logo/gogpac.webp" alt="GoGpac">
+								</div>
+								<div class="marquee-item">
+									<img class="img-2fa-method logo3" href="#cust4"
+										src="/images/customer-logo/suncor.webp" alt="Suncor">
+								</div>
+								<div class="marquee-item">
+									<img class="img-2fa-method logo4" href="#cust3" src="/images/customer-logo/jti.webp"
+										alt="jti">
+								</div>
+								<div class="marquee-item">
+									<img class="img-2fa-method logo5" href="#cust5"
+										src="/images/customer-logo/next47.webp" alt="Next47">
+								</div>
+								<div class="marquee-item">
+									<img class="img-2fa-method logo1" href="#cust1"
+										src="/images/customer-logo/bayada.webp" alt="Bayada">
+								</div>
+							</span>
+							<span>
+								<div class="marquee-item">
+									<img class="img-2fa-method logo2" href="#cust2"
+										src="/images/customer-logo/gogpac.webp" alt="GoGpac">
+								</div>
+								<div class="marquee-item">
+									<img class="img-2fa-method logo3" href="#cust4"
+										src="/images/customer-logo/suncor.webp" alt="Suncor">
+								</div>
+								<div class="marquee-item">
+									<img class="img-2fa-method logo4" href="#cust3" src="/images/customer-logo/jti.webp"
+										alt="jti">
+								</div>
+								<div class="marquee-item">
+									<img class="img-2fa-method logo5" href="#cust5"
+										src="/images/customer-logo/next47.webp" alt="Next47">
+								</div>
+								<div class="marquee-item">
+									<img class="img-2fa-method logo1" href="#cust1"
+										src="/images/customer-logo/bayada.webp" alt="Bayada">
+								</div>
+							</span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+			<br>
+			<br>
+
+			<!-- Pricing -->
+			<section id="price">
+				<div class="row" id="pricing">
+					<h3 class="product-page-heading text-center h1">Pricing</h3>
+					<div class="col-md-3">
+						<br><br><br>
+						<h4 class="text-center active-user"><b>How many Active Users?</b></h4>
+					</div>
+					<div class="col-md-9">
+						<br><br>
+						<div class="slidecontainer pull-left">
+							<input type="range" min="100" max="600" value="100" class="slider" step="100" id="myRange">
+							<span class="pull-left user-tier-text"><b>100</b></span><span
+								class="pull-right user-tier-text"><b>500+</b></span>
+							<br>
+							<output id="demo" for="myRange" value="100" class="output-rover">100</output>
+						</div>
+					</div>
+				</div>
+				<br><br>
+
+
+				<div class="container-fluid pricing-card">
+					<div class="col-md-4 col-xs-12">
+						<div class="pricing-items">
+							<div class="pricing-item">
+								<div class="pricing-item-inner">
+									<div class="pricing-item-content">
+
+										<h6 class="h1 text-center">SSO</h6>
+										<div class="row text-center cloud-price-section">
+											<sup class="sup-price">$</sup><span class="price">39</span>
+											<p class="price-text text-center">per month</p>
+										</div>
+										<div id="pricing-btn" class="text-center">
+											<br>
+											<a href="/iam/pricing" target="_blank" type="button"
+												class="btn prod-banner-btn">Buy License</a>
+											<a onclick="qouterequest()" target="_blank" type="button"
+												class="btn prod-banner-btn">Request a Quote</a>
+											<br><br>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-xs-12">
+						<div class="pricing-items">
+							<div class="pricing-item">
+								<div class="pricing-item-inner">
+									<div class="pricing-item-content">
+										<h6 class="h1 text-center">SSO + MFA</h6>
+										<div class="row text-center onprem-price-section">
+											<sup class="sup-price">$</sup><span class="price">69</span>
+											<p class="price-text text-center">per month</p>
+										</div>
+										<div id="pricing-btn" class="text-center">
+											<br>
+											<a href="/iam/pricing" target="_blank" type="button"
+												class="btn prod-banner-btn">Buy License</a>
+											<a onclick="qouterequest()" target="_blank" type="button"
+												class="btn prod-banner-btn">Request a Quote</a>
+											<br><br>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-xs-12">
+						<div class="pricing-items">
+							<div class="pricing-item">
+								<div class="pricing-item-content">
+									<div class="pricing-item-inner">
+										<h6 class="h1 text-center">SSO + Adaptive MFA</h6>
+										<div class="row text-center onprem-price-section1">
+											<sup class="sup-price">$</sup><span class="price">89</span>
+											<p class="price-text text-center">per month</p>
+										</div>
+										<div id="pricing-btn" class="text-center">
+											<br>
+											<a href="/iam/pricing" target="_blank" type="button"
+												class="btn prod-banner-btn">Buy License</a>
+											<a onclick="qouterequest()" target="_blank" type="button"
+												class="btn prod-banner-btn">Request a Quote</a>
+											<br><br>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+		</div>
+		</div>
+
+
+		<br><br>
+
+		</div>
+
+		<br><br>
+
+
+
+		<!-- Payment Methods -->
+		<h3 class="product-page-heading text-center h1">Payment Methods</h3>
+		<br>
+		<div class="row text-center">
+			<div class="container">
+				<div class="col-md-6 offset-md-4 mt-5">
+					<div class="plan-box">
+						<div class="plan-box-up">
+							<i class="fab fa-cc-amex fa-3x"></i>
+							<i class="fab fa-cc-visa fa-3x"></i>
+							<i class="fab fa-cc-mastercard fa-3x"></i>
+						</div>
+						<p>Credit cards (American Express, Discover, MasterCard, and Visa) - If the payment is made
+							through Credit Card/International Debit Card, the license will be created automatically once
+							the payment is completed.</p>
+					</div>
+				</div>
+
+				<div class="col-md-6 offset-md-4 mt-5">
+					<div class="plan-box">
+						<div class="plan-box-up">
+							<i class="fa fa-university fa-3x"><span class="h3">&nbsp;&nbsp;Bank Transfer</span></i>
+						</div>
+						<p>Please contact us <a href="/contact" target="_blank"><b>here</b></a> or drop an email at <a
+								href="mailto:info@xecurify.com"><b>info@xecurify.com</b></a> so that we can provide you
+							with the bank details.<br><br></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<br><br>
+
+		</div>
+		</div>
+	</section>
+
+	<!-- FAQs -->
+	<div>
+		<div class="row mt-5 faq-scroll">
+			<h3 class="product-page-heading text-center h2">Frequently Asked Questions.</h2><br>
+				<div class="container">
+					<div class="col-md-12">
+						<div class="faq">
+							<h3 class="faq-title">What is the licensing model?</h3>
+							<p class="faq-text">The IdP licenses are subscription are of 2types : <br> A] Monthly post
+								billings as per active usage and Support Plan includes 12 months of maintenance (support
+								and updates). <br> B]Pre billing for 12 months of usage and support plan includes
+								maintenance (support and updates).</p>
+							<button class="faq-toggle">
+								<i class="fas fa-chevron-down"></i>
+								<i class="fas fa-times"></i>
+							</button>
+						</div>
+					</div>
+
+					<div class="col-md-12">
+						<div class="faq">
+							<h3 class="faq-title">What is the refund policy?</h3>
+							<p class="faq-text">At miniOrange, we want to ensure you are 100% happy with your purchase.
+								If our miniOrange solution you purchased is not working as advertised and you've
+								attempted to resolve any issues with our support team, which couldn't get resolved. We
+								will
+								refund the whole amount within 10 days of the purchase. Please email us at <a
+									href="mailto:idpsupport@xecurify.com"
+									class="text-primary"><b>idpsupport@xecurify.com</b></a> for any queries regarding
+								the return policy or contact us
+								<a href="/contact" target="_blank"><b>here</b>.</a>
+							</p>
+							<button class="faq-toggle">
+								<i class="fas fa-chevron-down"></i>
+								<i class="fas fa-times"></i>
+							</button>
+						</div>
+					</div>
+					<br>
+
+					<div class="col-md-12">
+						<div class="faq">
+							<h3 class="faq-title">Does miniOrange offer technical support?</h3>
+							<p class="faq-text">Yes, we provide 24*7 support for all and any issues you might face while
+								using our miniOrange solution, which includes technical support from our developers. You
+								can get prioritized support based on the Support Plan you have opted. You can check out
+								the
+								from the quotation provided to you</a>.</p>
+							<button class="faq-toggle">
+								<i class="fas fa-chevron-down"></i>
+								<i class="fas fa-times"></i>
+							</button>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="faq">
+							<h3 class="faq-title">Does miniOrange store any user data?</h3>
+							<p class="faq-text">miniOrange does not store or transfer any data which is coming from the
+								Identity Provider to the BigCommerce. All the data remains within your premises /
+								server.</p>
+							<button class="faq-toggle">
+								<i class="fas fa-chevron-down"></i>
+								<i class="fas fa-times"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+				<br>
+				<p class="text-center"><a class="prod-banner-btn" href="https://faq.miniorange.com/" target="_blank">See
+						More</a></p>
+		</div>
+	</div>
+	</div>
+	</div>
+	<br>
+	<br>
+
+
+
+	<script>
+		$(document).ready(function () {
+			$(".th-idp-img-box").css('height', '88px');
+			$(".img-2fa-method").css('width', 'auto');
+			$(".adjust-logo").css('max-height', '40px');
+
+		});
+	</script>
+
+	<script>
+		var currency = '$';
+		$(document).ready(function () {
+
+			$('#onprem-pricing-features-div').css('display', 'none');
+			$('#onprem-pricing-features').click(function () {
+
+				if ($('#onprem-pricing-features-div').hasClass('show')) {
+					$('#onprem-pricing-features-div').removeClass('show');
+					$('#onprem-pricing-features-icon').removeClass('fa-angle-up').addClass('fa-angle-down');
+					$('#onprem-pricing-features').text('Show Features');
+				}
+				else {
+					$('#onprem-pricing-features-div').addClass('show');
+					$('#onprem-pricing-features-icon').removeClass('fa-angle-down').addClass('fa-angle-up');
+					$('#onprem-pricing-features').text('Collapse Features');
+				}
+
+			});
+
+			$('#onprem-pricing-features-2-div').css('display', 'none');
+			$('#onprem-pricing-features-2').click(function () {
+
+				if ($('#onprem-pricing-features-2-div').hasClass('show')) {
+					$('#onprem-pricing-features-div-2').removeClass('show');
+					$('#onprem-pricing-features-2-icon').removeClass('fa-angle-up').addClass('fa-angle-down');
+					$('#onprem-pricing-features-2').text('Show Features');
+				}
+				else {
+					$('#onprem-pricing-features-2-div').addClass('show');
+					$('#onprem-pricing-features-2-icon').removeClass('fa-angle-down').addClass('fa-angle-up');
+					$('#onprem-pricing-features-2').text('Collapse Features');
+				}
+
+			});
+
+			var slider = document.getElementById("myRange");
+			var output = document.getElementById("demo");
+			output.innerHTML = slider.value;
+
+			var val_array = [100, 200, 300, 400, 500, 600];
+			var array_array = [];
+			array_array['100'] = [0, 39, 69, 89, 100];
+			array_array['200'] = [11.5, 59, 89, 99, 200];
+			array_array['300'] = [26, 79, 99, 119, 300];
+			array_array['400'] = [40, 89, 119, 139];
+			array_array['500'] = [55, 99, 139, 159];
+			array_array['600'] = [72.5, 'Contact Us', 'Contact Us', 'Contact Us', 500];
+
+			output.innerHTML = 'Upto 100 Users';
+
+			slider.oninput = function () {
+
+				var addoffset = array_array[this.value][0] + '%';
+				$('.output-rover').css('left', 'calc(' + addoffset + ' + -5px)');
+
+				if (this.value == 600) {
+					output.innerHTML = '500+ Users';
+					$('.cloud-price-section .sup-price,.cloud-price-section .price-text,.onprem-price-section .sup-price,.onprem-price-section .price-text,.onprem-price-section .price-cond, .onprem-price-section1 .sup-price,.onprem-price-section1 .price-text,.onprem-price-section1 .price-cond').hide();
+					$('.cloud-price-section .price,.onprem-price-section .price, .onprem-price-section1 .price').css({ 'font-size': '40px', 'line-height': '3' });
+					$('.cloud-price-section .price').text(array_array[this.value][1]);
+					$('.onprem-price-section .price').text(array_array[this.value][2]);
+					$('.onprem-price-section1 .price').text(array_array[this.value][3]);
+				}
+				else {
+					output.innerHTML = 'Upto ' + this.value + ' Users';
+					$('.cloud-price-section .sup-price,.cloud-price-section .price-text,.onprem-price-section .sup-price,.onprem-price-section .price-text,.onprem-price-section .price-cond, .onprem-price-section1 .sup-price,.onprem-price-section1 .price-text,.onprem-price-section1 .price-cond').show();
+					$('.cloud-price-section .price,.onprem-price-section .price, .onprem-price-section1 .price').css({ 'font-size': '70px', 'line-height': '1.42' });
+
+					if (currency == 'Rs') {
+						$('.sup-price').text('Rs');
+						$('.cloud-price-section .price').text(array_array[this.value][1] * 75);
+						$('.onprem-price-section .price').text(array_array[this.value][2] * 75);
+						$('.onprem-price-section1 .price').text(array_array[this.value][3] * 75);
+					}
+					else {
+						$('.cloud-price-section .price').text(array_array[this.value][1]);
+						$('.onprem-price-section .price').text(array_array[this.value][2]);
+						$('.onprem-price-section1 .price').text(array_array[this.value][3]);
+					}
+					$('.pricing-features #f_sms').text(array_array[this.value][4]);
+				}
+			}
+
+
+		});
+	</script>
+
+	<script>
+		function qouterequest() {
+			$('.support-form-container').show();
+			$('#support-form .what_you_looking_for').val('Request a Quote');
+		}
+	</script>
+
+
+	<script>
+		$('a').click(function () {
+			$('html, body').animate({
+				scrollTop: $($(this).attr('href')).offset().top
+			}, 10);
+			return false;
+		});
+
+		// Cache selectors
+		var topMenu = $(".mob-hide-navbars"),
+			topMenuHeight = topMenu.outerHeight(),
+			// All list items
+			menuItems = topMenu.find("a"),
+			// Anchors corresponding to menu items
+			scrollItems = menuItems.map(function () {
+				var item = $($(this).attr("href"));
+				if (item.length) { return item; }
+			});
+
+		// Bind to scroll
+		$(window).scroll(function () {
+			// Get container scroll position
+			var fromTop = $(this).scrollTop() + topMenuHeight + 92;
+
+			// Get id of current scroll item
+			var cur = scrollItems.map(function () {
+				if ($(this).offset().top <= fromTop)
+					return this;
+			});
+			// Get the id of the current element
+			cur = cur[cur.length - 1];
+			var id = cur && cur.length ? cur[0].id : "";
+			// Set/remove active class
+			menuItems
+				.parent().removeClass("active")
+				.end().filter("[href='#" + id + "']").parent().addClass("active");
+		});
+	</script>
+
+
+	<script>
+		jQuery(document).ready(function () {
+
+			jQuery('.clk-icn').click(function () {
+				jQuery(this).find('i').toggleClass('fa-close fa-expand-alt')
+			});
+			jQuery('.goto-opt a').click(function (e) {
+				var href = jQuery(this).attr("href"),
+					offsetTop = href === "#" ? 0 : jQuery(href).offset().top - 130;
+				jQuery('html, body').stop().animate({
+					scrollTop: offsetTop
+				}, 300);
+			});
+			const toggles = document.querySelectorAll(".faq-toggle");
+
+			toggles.forEach((toggle) => {
+				toggle.addEventListener("click", () => {
+					toggle.parentNode.classList.toggle("active");
+				});
+			});
+
+			jQuery(window).scroll(function () {
+				var scrollDistance = jQuery(window).scrollTop();
+				var num = -1;
+
+				jQuery('.saml-scroll').each(function (i) {
+					if (jQuery(this).offset().top - 250 <= scrollDistance) {
+						num = i;
+					}
+				});
+				if (num != -1) {
+					jQuery('.goto-opt a.goto-active').removeClass('goto-active');
+					jQuery('.goto-opt a').eq(num).addClass('goto-active');
+				} else {
+					jQuery('.goto-opt a.goto-active').removeClass('goto-active');
+				}
+			}).scroll();
+
+		});
+	</script>
+
+	<!-- /footer -->
+	<?php include('../../common-template-docs/request-demo-common-template.php') ?>
+	<?php include('../../common-template-docs/other-products.php') ?>
+	<?php include("../../footer.php");?>
+	<!-- /footer
