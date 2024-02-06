@@ -1,8 +1,9 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { useFormik } from "formik";
 import "./forms.css";
 function homepage() {
+    const [able, setAble] = useState(true);
 
     const validate = values => {
         const errors = {};
@@ -49,6 +50,8 @@ function homepage() {
             alert(JSON.stringify(values, null, 2));
         },
     });
+
+
     return (
         <div className="homepage">
             <form className="forms" onSubmit={formik.handleSubmit}>
@@ -90,7 +93,7 @@ function homepage() {
                     value={formik.values.confirm_password}
                 />
                 {formik.errors.confirm_password ? <div className="errors">{formik.errors.confirm_password}</div> : null}
-                <button type="submit">Submit</button>
+                <button type="submit" disabled={formik.values.name === "" || formik.values.email === "" || formik.values.password === "" || formik.values.confirm_password === ""}>Submit</button>
             </form>
         </div>
     );
