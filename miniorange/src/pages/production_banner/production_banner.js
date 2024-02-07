@@ -60,6 +60,8 @@ function production_banner() {
     <div className="prod-banner">
       <div className="container">
         <div className="row">
+
+          {/* first column */}
           <div className="col-md-6">
             <div className="product-banner-heading">
               <h1 className="h2">
@@ -77,6 +79,9 @@ function production_banner() {
               Multi-Factor Authentication (MFA) for Thinkific can also be
               enabled.
             </h3>
+
+
+
             <div className="prod-banner-list-div">
               <p className="product-banner-text pd-tp-tw">
                 <FontAwesomeIcon
@@ -139,6 +144,11 @@ function production_banner() {
                 <ExpandMoreIcon />
               </ExpandMore>
             </div>
+
+
+
+
+
             <a
               href="#request-demo-section"
               target="_blank"
@@ -159,6 +169,11 @@ function production_banner() {
 
             <br></br>
           </div>
+
+
+
+
+
 
           {/* second column */}
           <div className="col-md-6 prod-banner-img-section">

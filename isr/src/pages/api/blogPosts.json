@@ -1,17 +1,25 @@
-[
+{
+  "blogs": [
     {
-      "id": "1",
-      "title": "First Blog Post",
-      "content": "This is my content for the first blog post."
+      "title": "Getting Started with JavaScript",
+      "author": "John Doe",
+      "date": "2024-02-07",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
+      "tags": ["JavaScript", "Programming"]
     },
     {
-      "id": "2",
-      "title": "Second Blog Post",
-      "content": "This is my content for the second blog post."
+      "title": "Introduction to React",
+      "author": "Jane Smith",
+      "date": "2024-02-10",
+      "content": "React is a JavaScript library for building user interfaces...",
+      "tags": ["React", "Frontend"]
     },
     {
-      "id": "3",
-      "title": "New Blog Post",
-      "content": "This is my content for the new blog post."
+      "title": "Exploring Node.js",
+      "author": "Alex Johnson",
+      "date": "2024-02-15",
+      "content": "Node.js is a runtime that allows executing JavaScript...",
+      "tags": ["Node.js", "Backend"]
     }
-   ]
+  ]
+}
