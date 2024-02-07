@@ -317,11 +317,11 @@ function customer(props) {
           <div className="cust-mob-heading">
             <h3 className="text-center" id="cust-heading">
               Over 200k+ registrations and 9k+ premium customers globally trust
-              miniOrang
+              miniOrange
             </h3>
           </div>
-          {category && (
-            <center>Trusted by Educational institutes across the world</center>
+          {category !== "All" && (
+            <center>Trusted by {category} across the world</center>
           )}
           {searchName && (
             <div className="cust-images ">

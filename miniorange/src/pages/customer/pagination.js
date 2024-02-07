@@ -22,7 +22,7 @@ const PaginationComponent = ({ totalItems, onPageChange }) => {
       alignItems="center"
     >
       <Pagination
-        count={totalPages - 1}
+        count={totalPages}
         page={currentPage}
         onChange={handlePageChange}
         shape="rounded"
