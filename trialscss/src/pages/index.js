@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Production_Banner />
-      {/* <Customer/> */}
+      <Customer />
     </>
   );
 }

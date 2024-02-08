@@ -1,32 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-.prod-banner {
+.prod_banner {
   background-color: white;
   height: max-content;
   color: black;
   font-family: "Poppins", sans-serif;
 }
-.prod-banner-h-t1,
-.prod-banner-h-t2 {
+.prod_banner_h_t1,
+.prod_banner_h_t2 {
   color: #eb5424;
   font-size: 50px;
   font-weight: 600;
   word-break: break-word;
   line-height: 1.2;
 }
-.prod-banner-h-t2 {
+.prod_banner_h_t2 {
   color: #3d3d3d;
 }
-.product-banner-text {
+.product-banner_text {
   color: #5b5b5b;
 }
-.prod-banner-cont {
+.prod_banner_cont {
   color: #5b5b5b;
   font-size: 18px;
   line-height: normal;
 }
 
-.primary-btn {
+.primary_btn {
   background-color: #eb5424 !important;
   margin: 1em 1em 1em 0;
   border-radius: 5px;
@@ -38,7 +38,7 @@
   align-items: center;
 }
 
-.secondary-btn {
+.secondary_btn {
   background-color: #fff;
   margin: 1em 1em 1em 0;
   border-radius: 5px;
@@ -48,32 +48,32 @@
   font-weight: 600;
 }
 
-.sec-btn {
+.sec_btn {
   border: 1px solid #eb5424 !important;
 }
 
-.prod-banner-img-section {
+.prod_banner_img_section {
   display: flex;
   /* align-items: center; */
   justify-content: center;
 }
 
-.prod-banner-img {
+.prod_banner_img {
   height: max-content;
 }
 
-.prod-banner-expand-icon {
+.prod_banner_expand_icon {
   width: 250px;
   display: flex;
   justify-content: center;
 }
 
-.prod-banner-list-div {
+.prod_banner_list_div {
   margin-top: 5%;
 }
 
 @media (max-width: 992px) {
-  .prod-banner-img {
+  .prod_banner_img {
     width: 90%;
   }
 }
