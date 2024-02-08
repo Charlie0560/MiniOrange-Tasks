@@ -87,6 +87,9 @@
 .cust-mobile-filter {
   display: none;
 }
+.cust-pagination {
+  display: none;
+}
 
 @media (max-width: 768px) {
   .cust-left-sec {
@@ -129,6 +132,7 @@
     margin-top: 15%;
   }
   .cust-pagination {
+    display: block;
     margin-top: 5%;
     margin-bottom: 10%;
   }

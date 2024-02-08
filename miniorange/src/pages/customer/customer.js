@@ -15,8 +15,8 @@ import {
   faUserGroup,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
-import React, { useState } from "react";
+import { FormControl, MenuItem, Select } from "@mui/material";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import custimg from "./intel3.png";
 import anoimg from "../production_banner/thinkific-integration.webp";
@@ -244,10 +244,16 @@ function customer(props) {
     // You can fetch the data for the new page here if needed
     setCurrentPage(page);
   };
-  const itemsPerPage = 18;
+  const[itemsPerPage , setItemPerPage] = useState(18);
+  useEffect(() => {
+    if (document.documentElement.clientWidth > 768) {
+      setItemPerPage(custimgFiles.length)
+    }
+  }, custimgFiles);
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
   const itemsToShow = custimgFiles.slice(startIndex, endIndex);
+
   return (
     <div className="customerPage">
       <div className="row">
