@@ -97,6 +97,11 @@ $cut-text-color: rgba(0, 0, 0, 0.567);
 .cust_pagination {
   display: none;
 }
+.no_cust_msg {
+  color: #f7934d;
+  text-align: center;
+  margin: auto;
+}
 
 @media (max-width: 768px) {
   .cust_left_sec {

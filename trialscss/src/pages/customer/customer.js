@@ -29,7 +29,6 @@ import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import PaginationComponent from "./pagination";
 import variables from "../../styles/variables.module.scss";
 
-
 const drawerBleeding = 56;
 
 const StyledBox = styled("div")(({ theme }) => ({
@@ -180,48 +179,6 @@ const custimgFiles = [
   {
     customer: custimg,
   },
-  {
-    customer: custimg,
-  },
-  {
-    customer: custimg,
-  },
-  {
-    customer: custimg,
-  },
-  {
-    customer: custimg,
-  },
-  {
-    customer: custimg,
-  },
-  {
-    customer: custimg,
-  },
-  {
-    customer: custimg,
-  },
-  {
-    customer: custimg,
-  },
-  {
-    customer: custimg,
-  },
-  {
-    customer: custimg,
-  },
-  {
-    customer: custimg,
-  },
-  {
-    customer: custimg,
-  },
-  {
-    customer: custimg,
-  },
-  {
-    customer: custimg,
-  },
 ];
 
 function customer(props) {
@@ -243,7 +200,6 @@ function customer(props) {
     setRegions(event.target.value);
   };
   const handlePageChange = (page) => {
-    // You can fetch the data for the new page here if needed
     setCurrentPage(page);
   };
   const [itemsPerPage, setItemPerPage] = useState(18);
@@ -254,8 +210,26 @@ function customer(props) {
   }, custimgFiles);
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
-  const itemsToShow = custimgFiles.slice(startIndex, endIndex);
 
+  // filters
+  var files = custimgFiles;
+  if (!searchName) {
+    if ((category === "All" && regions) || (!category && regions)) {
+      files = custimgFiles.filter((item) => item.region === regions);
+    } else if (category && !regions && category !== "All") {
+      files = custimgFiles.filter((item) => item.category === category);
+    } else if (category && regions) {
+      files = custimgFiles.filter(
+        (item) => item.region === regions && item.category === category
+      );
+    }
+  } else if (searchName) {
+    files = custimgFiles.filter((c) =>
+      c.name?.toLowerCase().startsWith(searchName)
+    );
+  }
+  const itemsToShow = files.slice(startIndex, endIndex);
+console.log(itemsToShow)
   return (
     <div className={variables.customerPage}>
       <div className="row">
@@ -334,103 +308,22 @@ function customer(props) {
           {category !== "All" && (
             <center>Trusted by {category} across the world</center>
           )}
-          {searchName && (
-            <div className={variables.cust_images}>
-              {itemsToShow.map(
-                (c) =>
-                  c.name?.toLowerCase().startsWith(searchName) && (
-                    <Image
-                      src={c.customer}
-                      width={135}
-                      className={`image-fluid ${variables.cust_img}`}
-                      alt="Picture of the cutomer"
-                    />
-                  )
-              )}
-              <h1 style={{ color: "#f7934d", textAlign: "center" }}>
-                No Customer Found!
-              </h1>
-            </div>
-          )}
-          {!searchName && (
-            <div className={variables.cust_images}>
-              {category === "All" &&
-                !regions &&
-                itemsToShow.map((c) => (
-                  <Image
-                    src={c.customer}
-                    width={135}
-                    className={`image-fluid ${variables.cust_img}`}
-                    alt="Picture of the cutomer"
-                  />
-                ))}
-              {category === "All" &&
-                regions &&
-                itemsToShow.map(
-                  (c) =>
-                    regions === c.region && (
-                      <Image
-                        src={c.customer}
-                        width={135}
-                        className={`image-fluid ${variables.cust_img}`}
-                        alt="Picture of the cutomer"
-                      />
-                    )
-                )}
-              {itemsToShow.map(
-                (c) =>
-                  !category &&
-                  !regions && (
-                    <Image
-                      src={c.customer}
-                      width={135}
-                      className={`image-fluid ${variables.cust_img}`}
-                      alt="Picture of the cutomer"
-                    />
-                  )
-              )}
-              {category &&
-                !regions &&
-                itemsToShow.map(
-                  (c) =>
-                    category === c.category && (
-                      <Image
-                        src={c.customer}
-                        width={135}
-                        className={`image-fluid ${variables.cust_img}`}
-                        alt="Picture of the cutomer"
-                      />
-                    )
-                )}
-              {!category &&
-                regions &&
-                itemsToShow.map(
-                  (c) =>
-                    regions === c.region && (
-                      <Image
-                        src={c.customer}
-                        width={135}
-                        className={`image-fluid ${variables.cust_img}`}
-                        alt="Picture of the cutomer"
-                      />
-                    )
-                )}
-              {category &&
-                regions &&
-                itemsToShow.map(
-                  (c) =>
-                    regions === c.region &&
-                    category === c.category && (
-                      <Image
-                        src={c.customer}
-                        width={135}
-                        className={`image-fluid ${variables.cust_img}`}
-                        alt="Picture of the cutomer"
-                      />
-                    )
-                )}
-            </div>
-          )}
+
+          <div className={variables.cust_images}>
+            {itemsToShow.length>0 ? (
+              itemsToShow.map((c) => (
+                <Image
+                  src={c.customer}
+                  width={135}
+                  className={`image-fluid ${variables.cust_img}`}
+                  alt="Picture of the cutomer"
+                />
+              ))
+            ) : (
+              <h1 className={variables.no_cust_msg}>No Customer Found!</h1>
+            )}
+          </div>
+
           <div className={variables.cust_pagination}>
             <PaginationComponent
               totalItems={custimgFiles.length}
