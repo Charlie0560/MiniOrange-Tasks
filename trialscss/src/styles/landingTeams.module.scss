@@ -1,0 +1,88 @@
+@mixin set_flex(
+  $flex: flex,
+  $align: center,
+  $colgap: 20px,
+  $justify: center,
+  $direction: column
+) {
+  display: $flex;
+  align-items: $align;
+  column-gap: $colgap;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
+
+.teamTabs {
+  @include set-flex(flex, center, 10px, center, row);
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  .teamTablist {
+    display: flex;
+    flex-wrap: wrap !important;
+    background-color: black;
+  }
+}
+.teamTab {
+  @include set-flex(flex, center, 5px, space-around, row);
+  border-radius: 4rem;
+  border: 2px solid rgba(0, 0, 0, 0.341);
+  background-color: #f8f8f8;
+  box-shadow: 4px 5px 9px #c7c7c7;
+
+  height: 50px;
+  padding: 1.5rem 2.5rem;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+// tabcontent section
+
+.tabContent {
+  border-radius: 30px;
+  background-color: #f8f8f8;
+  padding: 5%;
+  padding-bottom: 0;
+}
+
+.teamTabHeading {
+  font-weight: 700;
+  font-size: 35px;
+}
+.tabTextDiv {
+  @include set-flex(flex, center, 100px, flex-start, row);
+  color: #868181;
+  flex-wrap: wrap;
+  p {
+    width: 70%;
+  }
+  a {
+    background-color: #eb5424;
+    margin: 1em 1em 1em 0;
+    padding: 0.7rem 1rem !important;
+    border-radius: 5px;
+    color: #fff !important;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+  }
+}
+
+.tabimg {
+  width: 100%;
+  height: 50%;
+  margin-top: 5%;
+}
+
+@media (max-width: 992px) {
+  .tabTextDiv {
+    p {
+      width: 100%;
+    }
+    a {
+      margin-left: auto;
+    }
+  }
+}

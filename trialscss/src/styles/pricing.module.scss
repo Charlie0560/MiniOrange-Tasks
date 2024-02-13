@@ -1,0 +1,286 @@
+@mixin set_flex($flex: flex, $align: center, $colgap: 20px, $justify: center) {
+  display: $flex;
+  align-items: $align;
+  column-gap: $colgap;
+  justify-content: $justify;
+}
+.switchToggle {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switchToggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #eb5424;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #eb5424;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #eb5424;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.tagline {
+  span {
+    background-color: #3d3d3d;
+    color: white;
+    padding: 10px;
+    width: 400px;
+    border-radius: 7px;
+    text-align: center;
+  }
+}
+
+.pricing_toggleSection {
+  @include set-flex(flex, center, 0px, space-around);
+  .togglebtn,
+  .tagline {
+    @include set-flex(flex, center, 30px, center);
+    // width: max-content;
+  }
+
+  .togglebtn {
+    span {
+      font-size: "25px";
+      font-weight: 700;
+    }
+  }
+}
+
+// card section
+
+.leftSection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  padding: 20px;
+  h2 {
+    word-break: break-all;
+  }
+  row-gap: 40px;
+}
+.rightSection {
+  text-align: center;
+  padding: 20px;
+}
+.pricingCardSection {
+  @include set-flex(flex, flex-top, 5px, center);
+  flex-wrap: wrap;
+}
+.pricingCards {
+  height: max-content;
+}
+
+.pFeatures {
+  display: flex;
+  column-gap: 7px;
+  border: 1px solid #eb52244f;
+  font-size: 14px;
+}
+
+@media (max-width: 992px) {
+  .pricingCards {
+    width: 100%;
+  }
+}
+
+// customer IAM
+
+.tierSelection {
+  @include set-flex(flex, center, 5px, flex-start);
+  .tier_fltr {
+    // padding: 5px;
+    // background-color: black;
+    color: white;
+  }
+}
+
+.IAMCards {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 5px;
+  justify-content: center;
+}
+.customerIAMCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3%;
+  border-radius: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.27);
+  // max-width: 400px;
+  width: 24%;
+
+  .priceHead {
+    font-size: 1.2rem;
+    color: #787878;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+  }
+  p,
+  b,
+  a {
+    margin-left: 3%;
+  }
+  // background-color: black;
+}
+
+.customCard {
+  background-color: #3d3d3d;
+  color: white;
+  p {
+    color: white;
+  }
+}
+
+.popTag {
+  padding: 5px;
+  background-color: #eb5424;
+  color: white;
+  width: max-content;
+  border-radius: 50px;
+  font-size: 13px;
+  margin-top: -24%;
+  position: relative;
+}
+
+@media (max-width: 992px) {
+  .customerIAMCard {
+    width: 49%;
+    margin-top: 1%;
+  }
+  .popTag {
+    margin-top: -12%;
+  }
+}
+
+@media (max-width: 600px) {
+  .customerIAMCard {
+    width: 90%;
+    padding-top: 7%;
+    margin-top: 5%;
+  }
+}
+
+// identity plans section
+
+.accordians {
+  width: 100%;
+  background-color: #e5e5e5;
+}
+
+//widget Section
+.widget {
+  @include set-flex(flex, center, 20px, center);
+  width: 320px;
+  height: max-content;
+  flex-direction: column;
+  // border: 1px solid black;
+  border-radius: 20px;
+  padding: 2%;
+  padding-top: 0;
+  padding-inline: 0;
+  position: sticky;
+  bottom: 3%;
+  right: 0%;
+  float: right;
+  margin-bottom: 5%;
+  background-color: #e5e5e5;
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 15px;
+    margin-top: 3%;
+    input,
+    select {
+      width: 100%;
+    }
+    textarea {
+      width: 100%;
+      height: 10vh;
+    }
+    select {
+      padding: 3px;
+      outline: none;
+    }
+    button {
+      background-color: black;
+      color: white;
+      border-radius: 20px;
+      padding: 4%;
+    }
+  }
+  .widgetHeader {
+    width: 100%;
+    @include set-flex(flex, center, 20px, space-between);
+    background-color: #3d3d3d;
+    border-radius: 20px 20px 0px 0px;
+    margin: auto;
+    color: white;
+    // padding: 2%;
+    padding-top: 4%;
+    padding-inline: 5%;
+  }
+}
+
+.serviceIcon {
+  @include set-flex(flex, center, 20px, center);
+  padding: 3%;
+  border-radius: 50%;
+  font-size: 30px;
+  background-color: #e5e5e5;
+  width: 50px;
+  height: 50px;
+  right: 0;
+  bottom: 4%;
+  position: sticky;
+  float: right;
+}

@@ -1,0 +1,216 @@
+{
+  "employeeIAM": [
+    {
+      "title": "Single Sign-On(SSO)",
+      "listPrice": "1",
+      "onpremisePrice": "2",
+      "per": "/user/month",
+      "features": [
+        "Unlimited SAML, OAuth/OIDC, and JWT authentication with 5000+ prebuilt app catalog",
+        "Desktop and Mobile SSO",
+        "Login with External IDPs (SAML, OAuth/OpenID, CAS, etc.)",
+        "Connect with External Directories (LDAP/Active Directory/Azure AD/AWS Cognito,etc)",
+        "SSO Login with multiple Social Identity Providers",
+        "Authenticate using External Database (MYSQL, Postgre SQL, etc)",
+        "Windows Domain Authentication",
+        "Password Reset & Policy Management",
+        "Group and app access policies",
+        "API Authentication",
+        "Custom Branding (e.g. company.com/login)",
+        "Customizable Sign-In Page and Email Template",
+        "User Management Dashboard (Bulk Import Users, Manage Pending User Registrations, Manage Groups and Policies for users)",
+        "SSO support for Legacy and In-house Apps (React, Angular, nodejs, etc)",
+        "SIEM integration",
+        "Standard Authentication/Registration Reports",
+        "Up to 1 year Of Log Retention",
+        "Multiple Language Support"
+      ]
+    },
+    {
+      "title": "SSO + Multi-factor Authentication",
+      "listPrice": "2",
+      "onpremisePrice": "3",
+      "per": "/user/month",
+      "features": [
+        "All SSO Features",
+        "15+ MFA methods: OTP Over EMAIL/SMS,miniOrange Authenticator App- Push Notification, Mobile Token, QR Code,3rd party authenticators - Google Authenticator, Microsoft Authenticator, Authy, Security Questions,TOTP & Hardware Tokens, Yubikey Hardware Token",
+        "Offline Authentication",
+        "Passwordless Authentication",
+        "Password Blacklist",
+        "API Authentication",
+        "Multi-MFA Configuration",
+        "Role-Based MFA",
+        "Multiple Device Support",
+        "Multiple authentication factors per policy",
+        "WebAuthn Biometric Authentication"
+      ]
+    },
+    {
+      "title": "Desktop MFA",
+      "subTitle": "(Windows, MAC, and Linux)",
+      "listPrice": "1",
+      "onpremisePrice": "1.5",
+      "per": "/user/month",
+      "features": [
+        "MFA for Windows Machines (domain joined and standalone machines)",
+        "MFA for Windows Servers (RDP or RD Gateway)",
+        "MFA for RD Web",
+        "MFA on top of UAC (User Account Control)",
+        "MFA for MAC (without JamF)",
+        "MFA for Linux SSH",
+        "Passwordless windows login",
+        "Self-service password reset (SSPR) capabilities",
+        "Block Non-2FA users",
+        "Backup codes for admins",
+        "15+ MFA methods:OTP Over EMAIL/SMS,miniOrange Authenticator App- Push Notification, Mobile Token, QR Code,3rd party authenticators - Google Authenticator, Microsoft Authenticator, Authy,Security Questions,TOTP & Hardware Tokens, Yubikey Hardware Token",
+        "Hardware tokens (Display Tokens and FIDO2) as MFA",
+        "WebAuthn Biometric Factors (Windows Hello on PCs)",
+        "Offline MFA methods"
+      ]
+    },
+    {
+      "title": "Radius MFA",
+      "subTitle": "(VPN, Routers & Switches)",
+      "listPrice": "2",
+      "onpremisePrice": "2",
+      "per": "/user/month",
+      "features": [
+        "MFA over VPN - Fortinet, Cisco, PaloAlto, Sonicwall, Mikrotik, OpenVPN etc. Check More",
+        "MFA over Switches, Firewall's, and Switches. Learn More",
+        "15+ authentication methods:OTP Over EMAIL/SMS,miniOrange Authenticator App- Push Notification, Mobile Token, QR Code,3rd party authenticators - Google Authenticator, Microsoft Authenticator, Authy,Security Questions,TOTP & Hardware Tokens, Yubikey Hardware Token",
+        "Offline MFA Support",
+        "Passwordless Authentication",
+        "Alternate login methods / Backup Methods",
+        "Role-based MFA",
+        "Standard Authentication Reports"
+      ]
+    },
+    {
+      "title": "Universal Directory",
+      "listPrice": "1.5",
+      "onpremisePrice": "2",
+      "per": "/user/month",
+      "features": [
+        "Unlimited Directory Integrations",
+        "Integrate with AD/LDAP and HR systems",
+        "External Databases and third-party identity providers (SAML/OAuth) Connection",
+        "Unlimited custom user attributes and fields",
+        "Active directory and LDAP based user authentication",
+        "Attribute Mapping",
+        "Directory and Identity Synchronization",
+        "Custom Fields, mapping and Connectors",
+        "Trusted IdP",
+        "Security Policies"
+      ]
+    },
+    {
+      "title": "User Lifecycle Management",
+      "listPrice": "1.5",
+      "onpremisePrice": "2",
+      "per": "/user/month",
+      "features": [
+        "Import Users (Bulk Upload)",
+        "Manage Life Cycle States (Create, Update, Delete)",
+        "Bidirectional Sync",
+        "Custom Attribute mapping",
+        "Assign rules based on Users, Groups and Apps",
+        "AD/LDAP based Provisioning and Deprovisioning",
+        "Group-based provisioning and deprovisioning",
+        "Auto User Provisioning and Deprovisioning with miniOrange app catalog",
+        "Built-in standards-based provisioning (SCIM)",
+        "HR-driven provisioning (e.g. Bamboo HR, Workday, and UltiPro)",
+        "Scheduled automated provisioning",
+        "Access audit reports"
+      ]
+    },
+    {
+      "title": "Adaptive Access Policies",
+      "listPrice": "1",
+      "onpremisePrice": "1.5",
+      "per": "/user/month",
+      "features": [
+        "Restrict user access based on IP addresses",
+        "Time-Based Restriction (Weekdays, Weekend, Specified Timings)",
+        "Geo-Location Based Restriction (Changed Location)",
+        "Device-based Restriction (Pre Managed Device, Device Limit)",
+        "Set granular access Security Policies",
+        "Risk-Based Authentication"
+      ]
+    },
+    {
+      "title": "Legacy Apps SSO + MFA",
+      "listPrice": "2",
+      "onpremisePrice": "3",
+      "per": "/user/month",
+      "features": [
+        "Support for Unique On-premise applications (Oracle E-Business Suite, PeopleSoft, JDE, SAP, and Qlikview)",
+        "MFA for legacy Identities (Oracle EBS, PeopleSoft)",
+        "Support for Header-based applications",
+        "Integrated Windows Authentication",
+        "High Availability architecture support"
+      ]
+    },
+    {
+      "title": "SSO + MFA + Provisioning",
+      "listPrice": "3",
+      "onpremisePrice": "3.5",
+      "per": "/user/month",
+      "features": [
+        "All SSO features",
+        "All MFA features",
+        "All Provisioning and user management features",
+        "Overall Identity and Access Management (IAM) features"
+      ]
+    }
+  ],
+
+  "addOns": [
+    {
+      "title": "LDAP Gateway",
+      "text": "Login to your applications using Active Directory credentials where Active Directory is not publicly accessible.",
+      "features": [
+        "AD remains protected in your DMZ",
+        "Schedule sync between AD and miniOrange"
+      ]
+    },
+    {
+      "title": "Integrated Windows Authentication",
+      "text": "Automatic login to your applications using windows credentials on domain joined machine.",
+      "features": [
+        "Automatic Authentication for IWA enabled web apps for valid users",
+        "Secure the password and username with IWA Authentication",
+        "Single Authentication for multiple applications"
+      ]
+    },
+    {
+      "title": "LDAP User Provisioning and Sync",
+      "text": "Syncronize users between LDAP and miniOrange directory.",
+      "features": [
+        "Import users and groups",
+        "Auto assign users to groups",
+        "Sync passwords"
+      ]
+    }
+  ],
+
+  "customerIAM": {
+    "basic": {
+      "upto500": "49",
+      "upto1000": "99",
+      "upto2500" : "149", 
+      "upto5000": "249",
+      "upto7500" : "349",
+      "upto10000" : "449",
+      "upto10000+" : "Contact Us"
+    },
+    "professional": {
+      "upto500": "99",
+      "upto1000": "199",
+      "upto2500" : "375", 
+      "upto5000": "549",
+      "upto7500" : "699",
+      "upto10000" : "899",
+      "upto10000+" : "Contact Us"
+    }
+  }
+}
