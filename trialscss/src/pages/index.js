@@ -6,6 +6,7 @@ import Pricing from "@/pages/pricing/pricing";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Timeline from "@/pages/timeline/timeline";
 import LandingTeams from "@/pages/landingTeams/landingTeams";
+import Timeline2 from "@/pages/timeline/timeline2";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +18,8 @@ export default function Home() {
       {/* <Rate_Card /> */}
       {/* <Pricing /> */}
       {/* <Timeline /> */}
-      <LandingTeams />
+      <Timeline2 />
+      {/* <LandingTeams /> */}
     </>
   );
 }

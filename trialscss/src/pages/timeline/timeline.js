@@ -12,6 +12,8 @@ import VideoLabelIcon from "@mui/icons-material/VideoLabel";
 import StepConnector, {
   stepConnectorClasses,
 } from "@mui/material/StepConnector";
+import TimeLine2 from "./timeline2";
+import { Timeline } from "@mui/icons-material";
 
 const QontoStepIconRoot = styled("div")(({ theme, ownerState }) => ({
   color: theme.palette.mode === "dark" ? theme.palette.grey[700] : "#eaeaf0",
@@ -61,29 +63,9 @@ QontoStepIcon.propTypes = {
    */
   completed: PropTypes.bool,
 };
-
 const ColorlibConnector = styled(StepConnector)(({ theme }) => ({
   [`&.${stepConnectorClasses.alternativeLabel}`]: {
     top: 22,
-  },
-  [`&.${stepConnectorClasses.active}`]: {
-    [`& .${stepConnectorClasses.line}`]: {
-      backgroundImage:
-        "linear-gradient( 95deg,rgb(242,113,33) 0%,rgb(233,64,87) 50%,rgb(138,35,135) 100%)",
-    },
-  },
-  [`&.${stepConnectorClasses.completed}`]: {
-    [`& .${stepConnectorClasses.line}`]: {
-      backgroundImage:
-        "linear-gradient( 95deg,rgb(242,113,33) 0%,rgb(233,64,87) 50%,rgb(138,35,135) 100%)",
-    },
-  },
-  [`& .${stepConnectorClasses.line}`]: {
-    height: 3,
-    border: 0,
-    backgroundColor:
-      theme.palette.mode === "dark" ? theme.palette.grey[800] : "#eaeaf0",
-    borderRadius: 1,
   },
 }));
 
@@ -166,14 +148,31 @@ export default function CustomizedSteppers() {
       nearestIndex = i;
     }
   }
-  
+  const [counter, setCounter] = React.useState(0);
+
+  React.useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCounter((prevCounter) => {
+        const nextCounter = prevCounter < nearestIndex ? prevCounter + 1 : 0;
+
+        if (nextCounter === nearestIndex) {
+          clearInterval(intervalId);
+        }
+
+        return nextCounter;
+      });
+    }, 1000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <div className="mt-5">
       <Stack sx={{ width: "100%" }} spacing={4}>
         <Stepper
           alternativeLabel
-          activeStep={nearestIndex}
-          connector={<ColorlibConnector />}
+          activeStep={counter}
+          connector={<TimeLine2 />}
         >
           {steps.map((label) => (
             <Step key={label}>
