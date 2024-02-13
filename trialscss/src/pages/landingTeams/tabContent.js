@@ -7,12 +7,16 @@ function tabContent({ tabdata }) {
   const t = tabdata;
   return (
     <div className={`container ${teamsCSS.tabContent}`}>
-      <h1 className={teamsCSS.teamTabHeading}>{t.heading}</h1>
+      <h1 className={teamsCSS.teamTabHeading}>{t?.heading}</h1>
       <div className={teamsCSS.tabTextDiv}>
-        <p>{t.text}</p>
-        <a href={t.url}>Learn More</a>
+        <p>{t?.text}</p>
+        <a href={t?.url}>Learn More</a>
       </div>
-      <Image src={t.img} className={`image-fluid ${teamsCSS.tabimg}`} />
+      <Image
+        src={t?.img}
+        alt={t?.heading}
+        className={`image-fluid ${teamsCSS.tabimg}`}
+      />
     </div>
   );
 }
