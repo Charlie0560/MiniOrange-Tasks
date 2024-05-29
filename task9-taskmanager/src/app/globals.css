@@ -1,45 +1,43 @@
-.homediv{
+.homediv {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 15%;
 }
-.addbtn{
+.addbtn {
   width: max-content;
   padding: 3px;
   text-align: center;
 }
 
-.formdiv{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center ;
-
-}
-.titleinput{
-  width: 100%;
-  margin-top: 10px;
-}
-.taskdetail{
- margin-top: 10px;
-}
-.addbtn{
-  padding-inline: 10px;
-}
-
-.contents{
+.formdiv {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
-.content_div{
+.titleinput {
+  width: 100%;
+  margin-top: 10px;
+}
+.taskdetail {
+  margin-top: 10px;
+}
+.addbtn {
+  padding-inline: 10px;
+}
+
+.contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content_div {
   padding-inline: 20px;
   margin-top: 3%;
-  border-radius: 5px ;
+  border-radius: 5px;
   border: 1px solid black;
   background-color: rgba(128, 128, 128, 0.243);
   color: blue;
@@ -50,7 +48,11 @@
   column-gap: 20px;
 }
 
-.content_div button{
+.content_div button {
   width: 100px;
   height: 30px;
+}
+
+* {
+  font-family: "Montserrat";
 }

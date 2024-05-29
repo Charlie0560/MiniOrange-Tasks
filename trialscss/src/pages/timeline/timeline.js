@@ -12,8 +12,35 @@ import VideoLabelIcon from "@mui/icons-material/VideoLabel";
 import StepConnector, {
   stepConnectorClasses,
 } from "@mui/material/StepConnector";
+import Fade from "@mui/material/Fade";
+
 import TimeLine2 from "./timeline2";
 import { Timeline } from "@mui/icons-material";
+import Slider from "@mui/material/Slider";
+
+// const QontoConnector = styled(StepConnector)(({ theme }) => ({
+//   [`&.${stepConnectorClasses.alternativeLabel}`]: {
+//     top: 22,
+//     left: "calc(-50% + 16px)",
+//     right: "calc(50% + 16px)",
+//   },
+//   [`&.${stepConnectorClasses.active}`]: {
+//     [`& .${stepConnectorClasses.line}`]: {
+//       borderColor: "#784af4",
+//     },
+//   },
+//   [`&.${stepConnectorClasses.completed}`]: {
+//     [`& .${stepConnectorClasses.line}`]: {
+//       borderColor: "#784af4",
+//     },
+//   },
+//   [`& .${stepConnectorClasses.line}`]: {
+//     borderColor:
+//       theme.palette.mode === "dark" ? theme.palette.grey[800] : "#eaeaf0",
+//     borderTopWidth: 3,
+//     borderRadius: 1,
+//   },
+// }));
 
 const QontoStepIconRoot = styled("div")(({ theme, ownerState }) => ({
   color: theme.palette.mode === "dark" ? theme.palette.grey[700] : "#eaeaf0",
@@ -63,9 +90,30 @@ QontoStepIcon.propTypes = {
    */
   completed: PropTypes.bool,
 };
+
 const ColorlibConnector = styled(StepConnector)(({ theme }) => ({
   [`&.${stepConnectorClasses.alternativeLabel}`]: {
     top: 22,
+  },
+
+  [`&.${stepConnectorClasses.active}`]: {
+    [`& .${stepConnectorClasses.line}`]: {
+      backgroundImage:
+        "linear-gradient( 95deg,rgb(242,113,33) 0%,rgb(233,64,87) 50%,rgb(138,35,135) 100%)",
+    },
+  },
+  [`&.${stepConnectorClasses.completed}`]: {
+    [`& .${stepConnectorClasses.line}`]: {
+      backgroundImage:
+        "linear-gradient( 95deg,rgb(242,113,33) 0%,rgb(233,64,87) 50%,rgb(138,35,135) 100%)",
+    },
+  },
+  [`& .${stepConnectorClasses.line}`]: {
+    height: 3,
+    border: 0,
+    backgroundColor:
+      theme.palette.mode === "dark" ? theme.palette.grey[800] : "#eaeaf0",
+    borderRadius: 1,
   },
 }));
 
@@ -149,6 +197,7 @@ export default function CustomizedSteppers() {
     }
   }
   const [counter, setCounter] = React.useState(0);
+  const [sliderValue, setSliderValue] = React.useState(0);
 
   React.useEffect(() => {
     const intervalId = setInterval(() => {
@@ -163,8 +212,22 @@ export default function CustomizedSteppers() {
       });
     }, 1000);
 
-    return () => clearInterval(intervalId);
-  }, []);
+    const interval = setInterval(() => {
+      const step = 1;
+      setSliderValue((prevValue) => Math.min(prevValue + step, 100));
+
+      if (sliderValue === 100) {
+        clearInterval(interval);
+      }
+    }, 100);
+    return () => clearInterval(intervalId, interval);
+  }, [sliderValue]);
+
+  // React.useEffect(() => {
+
+  //   // Clear the interval when the component is unmounted
+  //   return () => clearInterval(interval);
+  // }, [sliderValue]);
 
   return (
     <div className="mt-5">
@@ -172,7 +235,19 @@ export default function CustomizedSteppers() {
         <Stepper
           alternativeLabel
           activeStep={counter}
-          connector={<TimeLine2 />}
+          connector={
+            <>
+              <ColorlibConnector />
+            </>
+            // <Slider
+            //   value={sliderValue}
+            //   sx={{
+            //     width: 300,
+            //     color: "success.main",
+            //     marginTop: "22px",
+            //   }}
+            // />
+          }
         >
           {steps.map((label) => (
             <Step key={label}>

@@ -75,8 +75,8 @@ export default function timeline2() {
         <Circle controls={thirdCircle} year="2022" />
         <Line controls={line2} />
         <Circle controls={fourthCircle} year="2027" />
-        <Line controls={line3} />
-        <Circle controls={fifthCircle} year="2032" />
+        {/* <Line controls={line3} />
+        <Circle controls={fifthCircle} year="2032" /> */}
       </div>
     </div>
   );
@@ -87,7 +87,7 @@ const Line = ({ controls }) => {
     start: {
       width: "200px",
       backgroundColor: "#C3002F",
-      transition: { duration: 1 },
+      transition: { duration: 0.5 },
     },
     initial: { width: 0 },
   };
@@ -115,7 +115,7 @@ const Circle = ({ controls, alreadyFinish, year }) => {
   const variants = {
     start: {
       backgroundColor: "#C3002F",
-      transition: { duration: alreadyFinish ? 0 : 2 },
+      transition: { duration: alreadyFinish ? 0 : 1 },
     },
     initial: alreadyFinish ? false : { backgroundColor: "#ccc" },
   };
